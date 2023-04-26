@@ -1,45 +1,45 @@
 
 package problema1;
     class terreno{
-    private double costo_terreno;
-    private double ancho_terreno;
-    private double largo_terreno;
-    private double area_terreno;
+    private double costoterreno;
+    private double anchoterreno;
+    private double largoterreno;
+    private double areaterreno;
     private double valorMetroCuadrado;
     public terreno(){}
     public terreno(double ancho_terreno, 
             double largo_terreno, 
             double valorMetroCuadrado){
-        this.ancho_terreno = ancho_terreno;
-        this.largo_terreno = largo_terreno;
+        this.anchoterreno = ancho_terreno;
+        this.largoterreno = largo_terreno;
         this.valorMetroCuadrado = valorMetroCuadrado;
     }
     public void setAncho(double ancho_terreno){
-        this.ancho_terreno = ancho_terreno;
+        this.anchoterreno = ancho_terreno;
     }
     public void setLargo(double largo_terreno){
-        this.largo_terreno = largo_terreno;
+        this.largoterreno = largo_terreno;
     }
     public void setValorMetroCuadrado(double valorMetroCuadrado){
         this.valorMetroCuadrado = valorMetroCuadrado;
     }
       public void calcularAreaTerreno(){
-        this.area_terreno = this.largo_terreno*this.ancho_terreno;
+        this.areaterreno = this.largoterreno*this.anchoterreno;
     }
      public void calcularCostoTerreno(){
-        this.costo_terreno = this.area_terreno*this.valorMetroCuadrado;
+        this.costoterreno = this.areaterreno*this.valorMetroCuadrado;
     }
     public double getCosto_Terreno(){
-        return this.costo_terreno;
+        return this.costoterreno;
     }
      public double getAncho(){
-        return this.ancho_terreno;
+        return this.anchoterreno;
     }
      public double getLargo(){
-        return this.largo_terreno;
+        return this.largoterreno;
     }
      public double getArea(){
-        return this.area_terreno;
+        return this.areaterreno;
     }
      public double getValorMetroCuadrado(){
         return this.valorMetroCuadrado;
