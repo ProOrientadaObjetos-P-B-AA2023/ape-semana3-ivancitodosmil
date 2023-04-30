@@ -1,4 +1,3 @@
-
 package problema1;
     class terreno{
     private double costoterreno;
@@ -7,18 +6,18 @@ package problema1;
     private double areaterreno;
     private double valorMetroCuadrado;
     public terreno(){}
-    public terreno(double ancho_terreno, 
-            double largo_terreno, 
+    public terreno(double anchoterreno, 
+            double largoterreno, 
             double valorMetroCuadrado){
-        this.anchoterreno = ancho_terreno;
-        this.largoterreno = largo_terreno;
+        this.anchoterreno = anchoterreno;
+        this.largoterreno = largoterreno;
         this.valorMetroCuadrado = valorMetroCuadrado;
     }
     public void setAncho(double ancho_terreno){
-        this.anchoterreno = ancho_terreno;
+        this.anchoterreno = anchoterreno;
     }
     public void setLargo(double largo_terreno){
-        this.largoterreno = largo_terreno;
+        this.largoterreno = largoterreno;
     }
     public void setValorMetroCuadrado(double valorMetroCuadrado){
         this.valorMetroCuadrado = valorMetroCuadrado;
@@ -45,7 +44,6 @@ package problema1;
         return this.valorMetroCuadrado;
     }
      
-    @Override
      public String toString(){
          String msj = String.format("DATOS DE TERRENO "
                  + "\nAncho del Terreno %.2f "
@@ -59,8 +57,8 @@ package problema1;
          return msj;
      }
 }
-public class Problema1 {
 
+public class Problema1 {
     public static void main(String[] args) {
         terreno terreno1 = new terreno(10,2,2);
         terreno1.calcularAreaTerreno();
